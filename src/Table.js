@@ -13,17 +13,17 @@ export const columns = [
   {
     title: '24h',
     dataIndex: 'aDay',
-    render: text => <a>{text}</a>
+    render: text => <h style={{ color: (text.includes('-'))? 'red':'green' }}>{text}</h>
   },
   {
     title: '7d',
     dataIndex: 'sevenDay',
-    render: text => <a>{text}</a>
+    render: text => <h style={{ color: (text.includes('-'))? 'red':'green' }}>{text}</h>
   },
   {
     title: '1 month',
     dataIndex: 'aMonth',
-    render: text => <a>{text}</a>
+    render: text => <h style={{ color: (text.includes('-'))? 'red':'green' }}>{text}</h>
   },
   {
     title: '24h Volume',
